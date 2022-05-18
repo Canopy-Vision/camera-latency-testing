@@ -9,8 +9,9 @@ img = cv2.imread('hardhat.png')
 # window_width = int(img.shape[1] * scale)
 # window_height = int(img.shape[0] * scale)
 
-# cv2.namedWindow('dst_rt', cv2.WINDOW_NORMAL)
-# cv2.resizeWindow('dst_rt', window_width, window_height)
+cv2.namedWindow('hardhat', cv2.WINDOW_NORMAL)
+cv2.moveWindow('hardhat', 2000, 50)
+cv2.resizeWindow('hardhat', 1080, 1080)
 
 cv2.imshow('hardhat', img)
 cv2.waitKey(0)
